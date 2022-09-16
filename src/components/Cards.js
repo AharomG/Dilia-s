@@ -33,7 +33,7 @@ const Cards = ({data,isOpen,open,close}) => {
             }
             </div>
             {
-                data.map( (el) => {console.log(el); return <Roulette key={el._id} img={el.img} open={handleStateNames(el.name)} closeModal={handleStateCloser(el.name)}/> }) //fix roulette
+                data.map( (el) => <Roulette key={el._id} img={el.img} open={handleStateNames(el.name)} closeModal={handleStateCloser(el.name)}/>)
             }
         </>
     );
